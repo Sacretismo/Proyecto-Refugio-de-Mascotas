@@ -1,0 +1,10 @@
+body {background-image: url("https://img.freepik.com/vector-gratis/icono-hueso-perro-pata-huella-ilustracion_71328-558.jpg");background-size: 150px;}
+.carousel {
+    height: 80%;
+}
+header{
+    background-color:rgb(32, 24, 24);
+}
+
+footer{background-color: rgb(139, 125, 125);
+margin: 20px;}

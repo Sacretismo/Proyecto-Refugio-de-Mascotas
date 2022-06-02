@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/perdidos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <h2 style="text-align: center;padding-bottom:20px;">FUNCIONALIDADES DISPONIBLES</h2>
+
+    <main>
+        <aside>
+            <div class="filtros">
+
+                <p class="texto-filtro">Tipo de animal:</p>
+                <div class="tipo-animal">
+                    <button id="btn-todo">Todo</button>
+                    <button id="btn-perro">Perro</button>
+                    <button id="btn-gato">Gato</button>
+                    <button id="btn-otro">Otro</button>
+                </div>
+                
+                <p class="texto-filtro">Ubicación de extravío:</p>
+                <div class="ubicacion">
+
+                    <select name="select"  autocomplete onmousedown="if(this.options.length>4){this.size=4;}" onchange='this.size=0;' onblur="this.size=0;" id="select-ubicacion"
+                        >
+                        <option value="Cualquier ubicación" selected>Cualquier ubicación</option>
+                        <option value="Buenos Aires">Buenos Aires</option>
+                        <option value="Quilmes">Quilmes</option>
+                        <option value="Qa">Qa</option>
+                        <option value="Florencio Varela">Florencio Varela</option>
+                        <option value="Puerto Madero">Puerto Madero</option>
+                        <option value="Bernal">Bernal</option>
+                        <option value="Avellaneda">Avellaneda</option>
+                        <option value="Bernal">Bernal</option>
+                        <option value="Bernal">Bernal</option>
+                        <option value="Bernal">Bernal</option>
+                        <option value="Bernal">Bernal</option>
+                        <option value="Bernal">Bernal</option>
+                        <option value="Bernal">Bernal</option>
+                        <option value="Bernal">Bernal</option>
+                        <option value="Bernal">Bernal</option>
+                        <option value="Bernal">Bernal</option>
+                        <option value="Bernal">Bernal</option>
+                        <option value="Bernal">Bernal</option>
+                        <option value="Bernal">Bernal</option>
+                        <option value="Bernal">Bernal</option>
+                        <option value="Bernal">Bernal</option>
+                        <option value="Bernal">Bernal</option>
+                    </select>
+                    
+                </div>
+            </div>
+            
+        </aside>
+
+
+        <div class="contenedor-volantes">
+            <div class="resultados" id="resultados">
+            </div>
+            
+            <div class="carteles" id="carteles">
+            </div>
+        </div>
+        
+
+
+    </main>
+
+    <script type="module" src="../js/perdidos.js"></script>
+    <script src="../js/jQuery/jquery-3.5.1.min.js"></script>
+
+</body>
+
+</html>

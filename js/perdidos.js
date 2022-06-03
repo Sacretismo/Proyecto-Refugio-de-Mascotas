@@ -63,7 +63,7 @@ function CargarVolantes(tipoAnimal,ubicacion) {
             var card = `
             <article class="cartel">
                     <header>
-                        <h1>SE BUSCA</h1>
+                        <h3>SE BUSCA</h3>
                     </header>
                     <main class="contenido-cartel">
                         <img src="${volante.url_imagen}" class="imagen-cartel" alt="Perro">

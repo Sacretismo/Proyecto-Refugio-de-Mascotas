@@ -8,7 +8,7 @@
 
 
 
-    <link rel="stylesheet" href="/login.css">
+    <link rel="stylesheet" href="../css/login.css">
 
 </head>
 <body>
@@ -22,36 +22,67 @@
                 <button type="button" class="toggle-btn" onclick="Login()">Log-in</button>
                 <button type="button" class=" toggle-btn" onclick="Register()">Register</button>
             </div>
-            <div class="social-icons">
-                <img src="/imagenes/fbl.png" alt="">
-                <img src="/imagenes/gl.png" alt="">
-                <img src="/imagenes/igl.png" alt="">
-            </div>
-
+            
+            
+               
 
 
             <form id="Login" class="input-group">
-                <input type="text" class="input-field" placeholder="User Id" required>
-                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input id="login-email" type="text" class="input-field" placeholder="User Id" required>
+                <input id="login-password" type="password" class="input-field" placeholder="Enter Password" required>
                 <input type="checkbox" class="check-box"><span>Remember Password</span>
-                <button type="submit" class="submit-btn">Log in</button>
+                <button type="submit" class="submit-btn" id="login-form">Log in</button>
+                <div class="social-icons">
+                    <img src="/imagenes/fbl.png" alt="" id="facebookLogin">
+                    <img src="/imagenes/gl.png" alt="" id="googleLogin">
+                    <img src="/imagenes/igl.png" alt="" id="logout">
+                </div>
             </form>
 
 
 
             <form id="Register" class="input-group">
-                <input type="text" class="input-field" placeholder="User Id" required>
-                <input type="email" class="input-field" placeholder="Email-Id" required>
-                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input id="signup-username" type="text" class="input-field" placeholder="Username" required>
+                <input id="signup-telephone" type="text" class="input-field" placeholder="Telephone" required>
+                <input id="signup-email" type="email" class="input-field" placeholder="Email-Id" required>
+                <input id="signup-password" type="password" class="input-field" placeholder="Enter Password" required>
                 <input type="checkbox" class="check-box"><span>I agree to terms & conditions</span>
-                <button type="submit" class="submit-btn">Register</button>
+                <button type="submit" class="submit-btn" id="signup-form">Register</button>
+                
             </form>
 
 
-
+            
         </div>
     </div>
-    <script src="/login.js"></script>
+
+
+
+<!-- SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
+  <!-- SDK FIREBASE -->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-firestore.js"></script>
+  <!-- Don't change the format for any other products. -->
+  <!-- etc. -->
+
+
+    <script src="../js/login.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,footer{
+    height: 10vh;
+    background-color: lightcoral;
+}
+main{
+    min-height: 80vh;
+    background-color: gray;
+}
+
+.contenedor-principal{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.izquierdo{
+    background-color: aqua;
+    min-height: 80vh;
+    
+}
+.derecho{
+    background-color: teal;
+    min-height: 80vh;
+}
+.arriba{
+    background-color: chocolate;
+    display: flex;
+    justify-content: center;
+}
+.abajo{
+    background-color: magenta;
+}
+#imagen-diseniada{
+    width: 200px;
+    padding: 1rem;
+}
+
+/* cards */
+.cards{
+    display: flex;
+    justify-content: space-around; /* Para que tengan la misma separación */
+    flex-wrap: wrap; /* Para que se ajusten a distintos tipos de pantalla */
+    margin: 0 auto; /* Para que estén centrados */
+}
+.cards > div{
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out; /* Para tarde 0.3s al modificarse */
+}
+.bloque1{
+    background-color: rgb(190, 145, 113);
+}
+.bloque2{
+    background-color: rgb(165, 115, 79);
+}
+.bloque3{
+    background-color: rgb(68, 32, 6);
+}
+.bloque4{
+    background-color: rgb(94, 79, 69);
+}
+
+.cards > div:hover{
+    transform: scale(1.04); /* Para que se agrande un poco al pasarle el mouse */
+}

@@ -12,7 +12,7 @@
 .bg{
     height: 100%;
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/bg.jpg");
+    /*background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/bg.jpg");*/
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -71,7 +71,7 @@
 }
 
 .input-group{
-    top: 180px;
+    top: 140px;
     position: absolute;
     width: 280px;
     transition: .5s;

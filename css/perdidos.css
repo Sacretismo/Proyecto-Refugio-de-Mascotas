@@ -175,3 +175,42 @@ h2{
     color: white;
     padding: 15px;
 }
+
+body> header{
+    min-height: 11vh;
+    display: flex;
+    transition: all 0.3s ease-in-out;
+    background-color:  rgba(233, 153, 171);
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+body> header a {
+    text-decoration: none;
+    padding: 7px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+body> header.active {
+    background-color: pink;
+    box-shadow: 0 2px 10px rgba(139, 34, 96, 0.3);
+}
+.navbar{
+    
+    width: 100%;
+}
+.navbar-nav{
+    margin-bottom: 0!important;
+}
+.navbar-brand, .navbar{
+    margin: 0;
+    padding: 0;
+
+}
+
+.ml-auto{
+    margin-left: auto;
+}

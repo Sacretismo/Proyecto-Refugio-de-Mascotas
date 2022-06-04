@@ -47,7 +47,9 @@ const fs = firebase.firestore();
 
 const loginCheck = (user) => {
   if (user) {
-      console.log("El usuario está logueado")
+    console.log("El usuario está logueado")
+    window.location.href = "../index.html";
+
   } else {
     console.log("El usuario no está logueado")
   }

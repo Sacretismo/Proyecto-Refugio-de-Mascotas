@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="/css/estilos.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
+  <link rel="stylesheet" href="./css/header-footer.css">
 </head>
 
 <body>
@@ -24,13 +25,17 @@
       <span class="nav-bar" id="btnMenu"><i class="fa-solid fa-bars"></i> Menu </span>
       <nav class="main-nav">
         <ul class="menu" id="menu">
-          <li class="menu__item"><a href="./html/refugios.html" target="_blank" class="menu__link">Refugios</a></li>
-          <li class="menu__item"><a href="./html/veterinarias.html" target="_blank" class="menu__link">Veterinarias</a></li>
-          <li class="menu__item"><a href="./html/perdidos.html" target="_blank" class="menu__link">Perdidos</a></li>
-          <li class="menu__item"><a href="./html/colabora.html" target="_blank" class="menu__link">Colabora</a></li>
-          <li class="menu__item"><a href="./html/programar.html" target="_blank" class="menu__link">Codeá</a></li>
-          <li class="menu__item"><a href="./html/contacto.html" target="_blank" class="menu__link">Contacto</a></li>
-          <li class="menu__item"><a href="./html/login.html" target="_blank" class="menu__link">Ingresar</a></li>
+          <li class="menu__item"><a href="./html/refugios.html" class="menu__link">Refugios</a></li>
+          <li class="menu__item"><a href="./html/veterinarias.html" class="menu__link">Veterinarias</a>
+          </li>
+          <li class="menu__item"><a href="./html/perdidos.html" class="menu__link">Perdidos</a></li>
+          <li class="menu__item"><a href="./html/colabora.html" class="menu__link">Colabora</a></li>
+          <li class="menu__item"><a href="./html/programar.html" class="menu__link">Codeá</a></li>
+          <li class="menu__item"><a href="./html/contacto.html" class="menu__link">Contacto</a></li>
+          <li class="menu__item ingresar"><a href="./html/login.html" class="menu__link">Ingresar</a>
+          </li>
+          <li class="menu__item logueado"><label id="logged-user1" class="menu__link" data-toggle="modal"
+              data-target="#perfilModal">Logueado</label></li>
         </ul>
       </nav>
 
@@ -72,7 +77,7 @@
             <div class="text-carrousel">
               <h5>Perdidos</h5>
               <p>
-                ¿Se ha extraviado tu mascota? 
+                ¿Se ha extraviado tu mascota?
               </p>
               <p>
                 Publica un volante online con tus datos para que te contacten si logran localizarla.
@@ -164,14 +169,63 @@
     </div>
 
   </main>
+  <!-- Modal -->
+  <div class="modal fade" id="perfilModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Mi Perfil</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="modal-body">
+          
+        </div>
+        <div class="modal-footer">
+          <!--
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          -->
+          <button type="button" class="btn btn-danger" id="logout">Cerrar Sesión</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
   <footer>
 
   </footer>
+  <!-- SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-auth.js"></script>
+
+
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
-    <script src="menu.js"></script>
-    <script src="script.js"></script>
+  <script src="menu.js"></script>
+  <script src="script.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>

@@ -48,7 +48,7 @@ article > main{
     height: 50%;
     width: 90%;
     margin: 0 auto;
-    background-image: url("img/perros6.jfif");
+    /*background-image: url("img/perros6.jfif");*/
     background-size: cover;
     background-repeat: no-repeat;
 }

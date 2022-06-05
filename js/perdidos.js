@@ -53,6 +53,8 @@ function CargarVolantes(tipoAnimal,ubicacion) {
     var i = 0;
     var main = $('#carteles');
     listaVolantes.forEach(volante => {
+        /*console.log(i)
+        console.log(volante)*/
         //if(!tipoAnimal || tipoAnimal && volante.tipoMascota == tipoAnimal){
         if(
             (!tipoAnimal && !ubicacion) ||

@@ -6,6 +6,7 @@
 
 body {
     font-family: "Roboto", sans-serif;
+    background-color: black;
 }
 main{ 
     display: flex;
@@ -16,8 +17,8 @@ a{
     text-decoration: none;
 }
 .fondo{
-    background-color: white;
     width: 45%;
+   
 }
 
 img{
@@ -30,8 +31,8 @@ h1 {
     padding: 4px;
     text-align: center;
     text-transform: capitalize;
-    font-size: 1.5em;
-    background:linear-gradient(rgb(77, 67, 215), rgb(86, 70, 139),rgb(120, 98, 231),rgb(122, 112, 166));
+    font-size: 2em;
+    background:linear-gradient(rgb(91, 86, 161), rgb(28, 21, 50),rgb(137, 129, 176),rgb(77, 76, 81));
     margin-bottom: 15px;
     color:white;
 }
@@ -42,24 +43,24 @@ h2{
 h2,img{
     display: inline-block;
     text-align: center;}
-div {
-    background-color: antiquewhite;
+
+div {padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    background-color: white;
     margin: 2px;
     border: 2px solid #e7e9eb;
     box-shadow: .4em .4em 1em rgba(0,0,0, .2);
     border-radius: .7em;
     margin-bottom: 25px;
-    padding-left: 5px;
-    padding-right: 5px;
     box-shadow: -1px -4px 25px rgb(71, 37, 157) inset, 1px 4px 3px rgb(126, 137, 182);
-    word-wrap: break-word;
-    padding: 2px;  
 }
 
 ul{list-style:none;}
+
 li{
-    display:grid;
-    grid-template-columns: 50px calc(100%-100px);
+    display: inline-block;
 }
 li::before{
     content: " ";
@@ -72,6 +73,7 @@ li::before{
     background-size: cover;   
     margin-right: 10px;
     border-radius: 100%;
+    
 }
 .wsp::before{
     content: " ";
@@ -92,16 +94,14 @@ a:visited{color: black;}
 }
 div iframe {
     border: none;
+    border-radius: 5px ;
     width: 100%;
     height: 100px;
 }
+
 /*Vista Tablets*/
-
-
 @media (min-width: 768px){
 }
     /*Vista Computadoras*/
     @media (min-width: 1200px){
     }
-
-    

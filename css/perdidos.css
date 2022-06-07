@@ -41,6 +41,7 @@ main{
     display: flex;
     flex-direction: column;
     padding-top: 11vh;
+    background-color: rgb(236, 234, 234);
 }
 article > main{
     height: 70%;

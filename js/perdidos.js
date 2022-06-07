@@ -5,6 +5,27 @@ window.onload = () => {
     //CargarVolantes();
     CargarAlquileres();
 };
+
+window.addEventListener("load", () => {
+    //console.log("Funcionó el onload");
+    let saveUserStorage = JSON.parse(sessionStorage.getItem("userSave"));
+  
+    if (saveUserStorage) {
+        var main = $('.agregar-volante');
+        var card = `
+        <button type="button" class="btn btn-primary" id="agregar">Agregar volante</button>
+        `
+        main.append(card);
+        document.querySelector("#agregar").addEventListener("click",()=>{
+            window.location.href = "./volante.html";
+        })
+    } 
+
+    
+});
+
+
+
 function CargarAlquileres() {
   ServiceAlquiler.default().then((x) => Cargar(x));
 }
@@ -14,6 +35,29 @@ function Cargar(x) {
 }
 
 
+
+$(document).ready(function(){
+
+	$('.btn-filtro').click(function(){
+        // OCULTANDO PRODUCTOS =========================
+        // $('.cartel').css('transform', 'scale(0)');
+        // function hideProduct(){
+        //     $('.cartel').hide();
+        // } setTimeout(hideProduct,400);
+
+        // // MOSTRANDO PRODUCTOS =========================
+        // function showProduct(){
+        //     $('.cartel').show();
+        //     $('.cartel').css('transform', 'scale(1)');
+        // } setTimeout(showProduct,400);
+
+        function aaa(){
+            console.log("a")
+        }
+
+	});
+
+});
 
 
 
@@ -25,21 +69,111 @@ select_ubicacion.addEventListener("click",(e)=>{
     $('#carteles').empty();
     CargarVolantes(tipo_seleccionado,(select_ubicacion.value == "Cualquier ubicación")?"":select_ubicacion.value) 
 })
+/*
+document.querySelector("#btn-perro").addEventListener("click",()=>{
+    // setTimeout(hideProduct,400)
+    // $('#carteles').empty();
+    console.log("asadas")
+    $('.cartel').css('transform', 'scale(0)');
+        function hideProduct(){
+            $('.cartel').hide();
+        } 
+        setTimeout(hideProduct,400);
+        //$('#carteles').empty();
+        // MOSTRANDO PRODUCTOS =========================
+        function showProduct(){
+            $('.cartel').show();
+            $('.cartel').css('transform', 'scale(1)');
+        } setTimeout(showProduct,400);
+
+})*/
+/*
+function hideProduct(){
+    $('.cartel').hide();
+    $('#carteles').empty();
+
+}
+function showProduct(){
+    $('.cartel').show();
+    $('.cartel').css('transform', 'scale(1)');
+} */
 
 document.getElementById("btn-todo").addEventListener("click",()=>{
-    $('#carteles').empty();
-    tipo_seleccionado = ""
-    CargarVolantes("",(select_ubicacion.value == "Cualquier ubicación")?"":select_ubicacion.value)
+    // $('.cartel').css('transform', 'scale(0)');
+    // setTimeout(()=>{
+    //     $('.cartel').hide()
+    //     $('#carteles').empty()
+    //     $('.cartel').css('display', 'none');
+
+    // },400);
+    
+
+    // setTimeout(()=>{
+    //     $('.cartel').css('transform', 'scale(1)');
+    //     tipo_seleccionado = ""
+    //     CargarVolantes("",(select_ubicacion.value == "Cualquier ubicación")?"":select_ubicacion.value)
+
+    //     $('.cartel').show();
+    //     $('.cartel').css('display', 'block');
+
+    // },400);
+    //$('#carteles').empty();
+    /*
+
+    $('.cartel').css('transform', 'scale(0)');
+        function hideProduct(){
+            $('.cartel').hide();
+            $('#carteles').empty();
+        } 
+        setTimeout(hideProduct,400);
+        //
+        
+
+        // MOSTRANDO PRODUCTOS =========================
+        function showProduct(){
+
+            tipo_seleccionado = ""
+            CargarVolantes("",(select_ubicacion.value == "Cualquier ubicación")?"":select_ubicacion.value)
+            
+            $('.cartel').show();
+            $('.cartel').css('transform', 'scale(1)');
+        
+        } setTimeout(showProduct,400);
+        */
+        tipo_seleccionado = ""
+        CargarVolantes("",(select_ubicacion.value == "Cualquier ubicación")?"":select_ubicacion.value)
+
 })
 document.getElementById("btn-perro").addEventListener("click",()=>{
-    $('#carteles').empty();
-    tipo_seleccionado = "Perro"
-    CargarVolantes("Perro",(select_ubicacion.value == "Cualquier ubicación")?"":select_ubicacion.value)
+    /*$('.cartel').css('transform', 'scale(0)');
+        function hideProduct(){
+            $('.cartel').hide();
+            $('#carteles').empty();
+        } 
+        setTimeout(hideProduct,400);
+        //
+        
+
+        // MOSTRANDO PRODUCTOS =========================
+        function showProduct(){
+            tipo_seleccionado = "Perro"
+            CargarVolantes("Perro",(select_ubicacion.value == "Cualquier ubicación")?"":select_ubicacion.value)
+            $('.cartel').show();
+            $('.cartel').css('transform', 'scale(1)');
+        
+        } setTimeout(showProduct,400);
+        */
+
+        $('#carteles').empty();
+        tipo_seleccionado = "Perro"
+        CargarVolantes("Perro",(select_ubicacion.value == "Cualquier ubicación")?"":select_ubicacion.value)
+
 })
 document.getElementById("btn-gato").addEventListener("click",()=>{
     $('#carteles').empty();
     tipo_seleccionado = "Gato"
     CargarVolantes("Gato",(select_ubicacion.value == "Cualquier ubicación")?"":select_ubicacion.value)
+
 })
 document.getElementById("btn-otro").addEventListener("click",()=>{
     $('#carteles').empty();
@@ -48,11 +182,11 @@ document.getElementById("btn-otro").addEventListener("click",()=>{
 })
 function CargarVolantes(tipoAnimal,ubicacion) {
 
-    
-
     var i = 0;
     var main = $('#carteles');
     listaVolantes.forEach(volante => {
+        /*console.log(i)
+        console.log(volante)*/
         //if(!tipoAnimal || tipoAnimal && volante.tipoMascota == tipoAnimal){
         if(
             (!tipoAnimal && !ubicacion) ||
@@ -63,7 +197,7 @@ function CargarVolantes(tipoAnimal,ubicacion) {
             var card = `
             <article class="cartel">
                     <header>
-                        <h3>SE BUSCA</h3>
+                        <h4>SE BUSCA</h4>
                     </header>
                     <main class="contenido-cartel">
                         <img src="${volante.url_imagen}" class="imagen-cartel" alt="Perro">
@@ -100,5 +234,3 @@ function CargarVolantes(tipoAnimal,ubicacion) {
     }
     console.log(i)
 }
-
-

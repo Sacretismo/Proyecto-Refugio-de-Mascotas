@@ -1,8 +1,9 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
 *{
     margin: 0%;
     padding: 0%;
 }
-
 .background {
     object-fit: cover;
     width: 100%;
@@ -22,21 +23,20 @@
 .form-box{
     height: 480px;
     width: 380px;
-    background: #2C3A41;
+    background: #fff;
     position: relative;
     margin: 6% auto;
     padding: 5px;
     overflow: hidden;
     border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
 }
 
 .button-box{
-    width: 220px;
-    margin: 35px auto;
-    position: relative;
-    box-shadow: 0 0 20px 9px rgb(228, 203, 95);
+    width: 350px;
+    margin: 15px 15px 15px 15px;
+    height: 100px;
+    /*position: relative;*/
+
     border-radius: 30px;
 }
 
@@ -47,13 +47,14 @@
     border: none;
     outline: none;
     position: relative;
+    left: 30px;
 }
 
 #btn{
     top: 0;
     left: 0;
     position: absolute;
-    width: 110px;
+    width: 220px;
     height: 100%;
     background: linear-gradient(to right, rgb(238, 104, 15), rgb(243, 163, 13));
     border-radius: 30px;
@@ -122,4 +123,29 @@
 
 #Register{
     left: 450px;
+}
+
+
+.button-box{
+    /*background-image: url("../img/fondoplanetas.jpg");*/
+    background-color: whitesmoke;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.se-busca{
+    font-family: 'Poppins', sans-serif;
+    color: #f0525f;
+    font-size: 45px;
+    font-weight: bold;
+}
+.bg{
+    background-image: url("../img/perro-fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form-check-input{
+    margin: 0px 0px 0px 32px;
 }

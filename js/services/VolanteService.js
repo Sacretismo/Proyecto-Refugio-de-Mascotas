@@ -1,6 +1,6 @@
 
 const GetAlquileres = (idCliente) => {
-    let url = "http://localhost:8080/api/volantes";
+    let url = "https://servidor-refugio.herokuapp.com/api/volantes";
     return fetch(url, {
         method:"GET",
         headers: {

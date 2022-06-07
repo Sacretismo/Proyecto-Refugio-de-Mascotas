@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="shortcut icon" href="../images/perrologo2.png">
+
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
@@ -20,7 +22,7 @@
     <header>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="../index.html">
                 <img src="../images/logo.png" alt="" width="150" height="50">
               </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,10 +67,10 @@
 
                 <p class="texto-filtro">Tipo de animal:</p>
                 <div class="tipo-animal">
-                    <button id="btn-todo">Todo</button>
-                    <button id="btn-perro">Perro</button>
-                    <button id="btn-gato">Gato</button>
-                    <button id="btn-otro">Otro</button>
+                    <button class="btn-filtro" id="btn-todo">Todo</button>
+                    <button class="btn-filtro" id="btn-perro">Perro</button>
+                    <button class="btn-filtro" id="btn-gato">Gato</button>
+                    <button class="btn-filtro" id="btn-otro">Otro</button>
                 </div>
                 
                 <p class="texto-filtro">Ubicación de extravío:</p>
@@ -102,15 +104,25 @@
                     </select>
                     
                 </div>
+                
+
             </div>
             
         </aside>
 
 
         <div class="contenedor-volantes">
-            <div class="resultados" id="resultados">
+
+            <div class="conteiner-info">
+              <div class="resultados" id="resultados">
+
+              </div>
+              <div class="agregar-volante">
+              </div>
             </div>
             
+
+
             <div class="carteles" id="carteles">
             </div>
         </div>
@@ -126,6 +138,7 @@
 
 
     <script src="../script.js"></script>
+    <script type="module" src="../js/utils.js"></script>
 </body>
 
 </html>

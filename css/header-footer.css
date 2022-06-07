@@ -149,10 +149,10 @@ header a.current, header a:hover {
     position: relative;
     text-decoration: none;
   }
-
+/*
 .logged-user:hover {
 }
-
+*/
 .logged-user::before {
     content: "";
     position: absolute;

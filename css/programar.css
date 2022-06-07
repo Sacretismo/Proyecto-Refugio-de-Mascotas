@@ -6,37 +6,46 @@
 
 header,footer{
     height: 10vh;
-    background-color: lightcoral;
+    background-color: yellow;
+}
+body{
+    background-image: url(../imagenes/imagen_cachorro.jpeg);
+    background-size: cover ;
+    background-repeat: no-repeat;
 }
 main{
     min-height: 80vh;
-    background-color: gray;
+    background-color: none;
+    
 }
 
 .contenedor-principal{
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 50% 50%;
 }
 
 .izquierdo{
-    background-color: aqua;
+    background-color: none;
     min-height: 80vh;
     
 }
 .derecho{
-    background-color: teal;
+    justify-content: center;
+    padding: 4rem;
+    background-color: none;
+    color: antiquewhite;
     min-height: 80vh;
 }
 .arriba{
-    background-color: chocolate;
+    background-color: none;
     display: flex;
     justify-content: center;
 }
 .abajo{
-    background-color: magenta;
+    background-color: none;
 }
 #imagen-diseniada{
-    width: 200px;
+    width: 400px;
     padding: 1rem;
 }
 
@@ -46,6 +55,8 @@ main{
     justify-content: space-around; /* Para que tengan la misma separación */
     flex-wrap: wrap; /* Para que se ajusten a distintos tipos de pantalla */
     margin: 0 auto; /* Para que estén centrados */
+    
+    
 }
 .cards > div{
     width: 150px;
@@ -57,18 +68,66 @@ main{
     transition: transform 0.3s ease-in-out; /* Para tarde 0.3s al modificarse */
 }
 .bloque1{
-    background-color: rgb(190, 145, 113);
+    background-image: url("../imagenes/logo1.jpg");
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+
 }
 .bloque2{
-    background-color: rgb(165, 115, 79);
+    background-image: url("../imagenes/logo2.png");
+    display: flex;
+    justify-content: center;
+    margin: 5px;
 }
 .bloque3{
-    background-color: rgb(68, 32, 6);
+    background-image: url("../imagenes/logo3.jpg");
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+
 }
 .bloque4{
-    background-color: rgb(94, 79, 69);
+    background-image: url("../imagenes/logo4.jpg");
+    display: flex;
+    justify-content: center;
+    margin: 5px;
 }
-
+.bloque5{
+    background-image: url("../imagenes/logo5.jpg");
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.bloque6{
+    background-image: url("../imagenes/logo6.jpg");
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.bloque7{
+    background-image: url("../imagenes/logo7.png");
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.bloque8{
+    background-image: url("../imagenes/logo8.png");
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
 .cards > div:hover{
     transform: scale(1.04); /* Para que se agrande un poco al pasarle el mouse */
+}
+
+h1{
+    
+    font-size: 200%;
+    text-align: center;
+}
+
+a{
+    width: 100%;
+    height: 100%;
 }

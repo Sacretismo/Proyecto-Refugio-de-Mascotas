@@ -40,6 +40,7 @@ main{
     grid-template-columns: 25% 75%;*/
     display: flex;
     flex-direction: column;
+    padding-top: 11vh;
 }
 article > main{
     height: 70%;
@@ -148,6 +149,7 @@ aside{
 h4{
     color: RED;
     font-weight: 500;
+
 }
 
 
@@ -187,7 +189,7 @@ h2{
     color: white;
     padding: 15px;
 }
-
+/*
 body> header{
     min-height: 11vh;
     display: flex;
@@ -226,7 +228,7 @@ body> header.active {
 .ml-auto{
     margin-left: auto;
 }
-
+*/
 
 
 .carteles .cartel{
@@ -249,5 +251,5 @@ body> header.active {
 .agregar-volante{
     position: absolute;
     right: 10px;
-    top: 0;
+    top: 5px;
 }

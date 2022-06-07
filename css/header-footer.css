@@ -4,6 +4,147 @@
     box-sizing: border-box;
 }
 
+
+/* ************************************************************* */
+/*                              HEADER                           */
+/* ************************************************************* */
+
+body { 
+    overflow-x: hidden;
+}
+#logo{
+    height: 50px;
+    width: 150px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.nav-bar{
+    /*background-color: pink ;*/
+    padding: 14px 20px 0 20px;
+    display: block;
+    cursor: pointer;
+    font-size: 1.5em;
+    width: 100%;
+    height: 100%;
+}
+.menu{
+    list-style:none;
+    padding:0;
+    margin:0;
+    
+}
+.menu{
+    width: 100%;
+    margin-left: 100%;
+    transition: all 0.5s;
+}
+.menu__link{
+    display: block;
+    /*padding: 20px;*/
+    padding: 20px 8px 20px 8px;
+    color:white;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+.menu__item:hover{
+    background: rgb(216, 147, 216);
+    transition: all 0.8s;
+
+}
+a:hover{
+    color: rgb(255, 255, 255);
+
+}
+.menu__link:active{
+    color: white;
+}
+.mostrar{
+    margin-left: 0;
+    z-index: 3;
+    background-color: pink;
+}
+.conteiner-carrousel{
+    height: 45vh;
+}
+
+body> header{
+    display: flex;
+    justify-content: space-between;
+    height: 11vh;
+    /* Agregado */
+    
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+    background-color:  rgba(233, 153, 171);
+    /*background: transparent*/
+}
+
+
+
+/* **************************** AGREGADO ******************************** */
+
+  /*
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  header ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+  }
+  */
+  body> header a {
+    text-decoration: none;
+    padding: 7px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+body> header.active {
+    background-color: pink;
+    box-shadow: 0 2px 10px rgba(202, 104, 161, 0.3);
+}
+
+/*
+header.active a {
+    color: #000;
+}
+*/
+body> header.active .container {
+    padding: 10px 0;
+}
+/*
+header a.current, header a:hover {
+    color: #2b84c0;
+    font-weight: bold;
+}
+
+*/
+
+.close{
+    border: none;
+    background-color: #fff;
+}
+/* **************************** FIN AGREGADO ******************************** */
+
+
+
+
+/* ************************************************************* */
+/*                              LOGGED                           */
+/* ************************************************************* */
+
 .logged-user {
     position: relative;
     text-decoration: none;
@@ -48,7 +189,7 @@ body {
 
 /* El pie de página se fija en la parte inferior de la página. */
 
-footer {
+body> footer {
     position: fixed;
     bottom: 0;
     min-height: 15vh;
@@ -56,7 +197,7 @@ footer {
 
 
 @media (max-height:800px) {
-    footer {
+    body> footer {
         position: static;
     }
 }
@@ -220,3 +361,31 @@ footer {
     }
 }       
         
+
+
+
+
+/*Vista Tablets*/
+@media (min-width: 768px){
+    .nav-bar{
+        display:none;
+    }
+    .menu{
+        margin-left:0;
+        display:flex;
+        
+    }
+    body> header{
+        background-color:  rgba(233, 153, 171, 0.4);
+        align-items: center;
+
+    }
+}
+
+/*Vista Computadoras*/
+@media (min-width: 1200px){
+
+}
+
+
+

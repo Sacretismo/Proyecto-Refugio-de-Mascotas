@@ -5,13 +5,13 @@
 }
 
 body {
-    font-family: "Roboto", sans-serif;
-    background-color: black;
 }
 main{ 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    font-family: "Roboto", sans-serif;
+    margin-top: 11vh;
 }
 a{
     text-decoration: none;
@@ -21,7 +21,7 @@ a{
    
 }
 
-img{
+.fondo img{
     width: 30px;
     height: 30px;
     border-radius: 100%;
@@ -43,12 +43,8 @@ h2{
 h2,img{
     display: inline-block;
     text-align: center;}
-
-div {padding-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 5px;
-    background-color: white;
+.fondo{
+    background-color: antiquewhite;
     margin: 2px;
     border: 2px solid #e7e9eb;
     box-shadow: .4em .4em 1em rgba(0,0,0, .2);
@@ -62,7 +58,7 @@ ul{list-style:none;}
 li{
     display: inline-block;
 }
-li::before{
+.lista-mapa > li::before{
     content: " ";
     display: inline-block;
     width: 25px;

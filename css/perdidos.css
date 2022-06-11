@@ -254,3 +254,13 @@ body> header.active {
     right: 10px;
     top: 5px;
 }
+
+article header{
+    position: relative;
+}
+
+#cruz{
+    position: absolute;
+    right: 0;
+    top: 0;
+}

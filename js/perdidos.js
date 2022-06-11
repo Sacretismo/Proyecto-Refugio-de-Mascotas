@@ -188,6 +188,8 @@ function CargarVolantes(tipoAnimal,ubicacion) {
         /*console.log(i)
         console.log(volante)*/
         //if(!tipoAnimal || tipoAnimal && volante.tipoMascota == tipoAnimal){
+            
+        
         if(
             (!tipoAnimal && !ubicacion) ||
             (!tipoAnimal && ubicacion && ubicacion == volante.ubicacion) ||
@@ -196,7 +198,7 @@ function CargarVolantes(tipoAnimal,ubicacion) {
             ){
             var card = `
             <article class="cartel">
-                    <header>
+                    <header id="cartel${i}">
                         <h4>SE BUSCA</h4>
                     </header>
                     <main class="contenido-cartel">
@@ -222,8 +224,17 @@ function CargarVolantes(tipoAnimal,ubicacion) {
             main.append(card);
             i++;
         }
-        
-        
+        /*
+        var main2 = $('#cartel'+i);
+        if(JSON.parse(sessionStorage.getItem("userSave"))){
+            if(JSON.parse(sessionStorage.getItem("userSave")).id == volante.idUsuario){
+                console.log("Lo tiene")
+                var card2 = `
+                    <p id="cruz">X</p>
+                `
+            }
+        }
+        main2.append(card2);*/
     })
     $('#resultados').empty();
     if(i){

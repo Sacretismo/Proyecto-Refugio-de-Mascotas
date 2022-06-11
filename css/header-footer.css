@@ -48,7 +48,8 @@ body {
     text-decoration: none;
 }
 .menu__item:hover{
-    background: rgb(216, 147, 216);
+    /*background: rgb(216, 147, 216);*/
+    background: rgb(1, 56, 56);
     transition: all 0.8s;
 
 }
@@ -62,7 +63,7 @@ a:hover{
 .mostrar{
     margin-left: 0;
     z-index: 3;
-    background-color: pink;
+    background-color: #44A8C0;
 }
 .conteiner-carrousel{
     height: 45vh;
@@ -81,7 +82,8 @@ body> header{
     left: 0;
     right: 0;
     transition: all 0.3s ease-in-out;
-    background-color:  rgba(233, 153, 171);
+    /*background-color:  rgba(233, 153, 171);*/
+    background-color:  #44A8C0;
     /*background: transparent*/
 }
 
@@ -112,7 +114,9 @@ body> header{
 }
 
 body> header.active {
-    background-color: pink;
+    /*background-color: pink;*/
+    background-color:  #44A8C0;
+
     box-shadow: 0 2px 10px rgba(202, 104, 161, 0.3);
 }
 
@@ -376,7 +380,7 @@ body> footer {
         
     }
     body> header{
-        background-color:  rgba(233, 153, 171, 0.4);
+        /*background-color:  rgba(233, 153, 171, 0.4);*/
         align-items: center;
 
     }
@@ -389,3 +393,6 @@ body> footer {
 
 
 
+body{
+    background-color: #d3dfd4;
+}

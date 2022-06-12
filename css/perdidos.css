@@ -26,8 +26,9 @@ main{
     background-size: cover;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out; /* Para tarde 0.3s al modificarse */
-    background-color: rgb(235, 235, 235);
     border: 1px solid rgb(161, 161, 161);
+    /* background-color: rgb(235, 235, 235); */
+    background-color: rgb(233, 233, 233);
 }
 article > header{
     height: 10%;
@@ -44,7 +45,7 @@ main{
     display: flex;
     flex-direction: column;
     padding-top: 11vh;
-    background-color: rgb(236, 234, 234);
+    /* background-color: rgb(236, 234, 234); */
 }
 article > main{
     height: 70%;
@@ -141,12 +142,17 @@ aside{
     border: 0;
     color: #ffff;
     text-align: center;
-    background: linear-gradient(to right, rgb(71 153 237), rgb(55 100 225));
+    /* background: linear-gradient(to right, rgb(71 153 237), rgb(55 100 225)); */
+    background: linear-gradient(45deg, #44A8C0, #3e99af);
+
 }
 
 .tipo-animal>button:hover, .ubicacion>select:hover{
-    background-color: tomato;
-    background: linear-gradient(to left, rgb(71 153 237), rgb(55 100 225));
+    /* background-color: tomato; */
+    /* background: linear-gradient(to left, rgb(71 153 237), rgb(55 100 225)); */
+    /* background: linear-gradient(45deg, #44A8C0, rgb(34, 143, 134)); */
+    background: rgb(1, 56, 56);
+    transition: all 0.8s;
 
 
 }

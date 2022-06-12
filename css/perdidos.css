@@ -5,6 +5,9 @@
     margin: 0;
     padding: 0;
 }
+main{
+    padding-bottom: 40px;
+}
 
 .carteles{
     display: flex;

@@ -27,12 +27,18 @@ function Login(){
 // Your web app's Firebase configuration
 var firebaseConfig = {
 // YOUR FIREBASE CREDENTIALS HERE 
-    apiKey: "AIzaSyCj3KUX75wqOSNHQm-uEyQve1DNuI68a2Q",
+    /*apiKey: "AIzaSyCj3KUX75wqOSNHQm-uEyQve1DNuI68a2Q",
     authDomain: "fb-auth-6c6d3.firebaseapp.com",
     projectId: "fb-auth-6c6d3",
     storageBucket: "fb-auth-6c6d3.appspot.com",
     messagingSenderId: "812629036491",
-    appId: "1:812629036491:web:7c92dd5c0c8b7f5e253a4e"
+    appId: "1:812629036491:web:7c92dd5c0c8b7f5e253a4e"*/
+    apiKey: "AIzaSyAW7nZr3H4vpVsV59gZGkr4fxFwDGhULFY",
+    authDomain: "puppycare-9f547.firebaseapp.com",
+    projectId: "puppycare-9f547",
+    storageBucket: "puppycare-9f547.appspot.com",
+    messagingSenderId: "700917022800",
+    appId: "1:700917022800:web:ebcbc955de158dceaa9155"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);

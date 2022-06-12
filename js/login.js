@@ -101,6 +101,7 @@ auth.onAuthStateChanged((user) => {
 const signUpForm = document.querySelector("#Register");
 signUpForm.addEventListener("submit", (e) => {
   e.preventDefault();
+  cargando();
   const username = signUpForm["signup-username"].value;
   const telephone = signUpForm["signup-telephone"].value;
   const email = signUpForm["signup-email"].value;
@@ -162,6 +163,7 @@ const signInForm = document.querySelector("#Login");
 
 signInForm.addEventListener("submit", (e) => {
   e.preventDefault();
+  cargando();
   const email = signInForm["login-email"].value;
   const password = signInForm["login-password"].value;
 
@@ -297,4 +299,16 @@ function getUserStorage(){
 }
 function removeUserStorage(){
     sessionStorage.removeItem('userSave');
+}
+
+
+
+
+function cargando() {
+  return Swal.fire({
+    title: "Cargando...",
+    showConfirmButton: false,
+    allowOutsideClick: false,
+    imageUrl: "../gifs/load.gif"
+  });
 }

@@ -9,13 +9,15 @@ input,
 textarea {
     font-family: "Poppins", sans-serif;
 }
-
+header{
+    position: static!important;
+}
 .container {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    padding: 2rem;
-    background-color: #fafafa;
+    padding: 0 2rem 2rem 2rem;
+    /*background-color: #fafafa;*/
     overflow: hidden;
     display: flex;
     align-items: center;

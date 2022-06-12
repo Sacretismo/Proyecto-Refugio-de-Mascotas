@@ -37,12 +37,13 @@
     width: 220px;
     margin: 35px auto;
     position: relative;
+    /* box-shadow: 0 0 20px 9px rgb(100 199 199); */
     box-shadow: 0 0 20px 9px rgb(228, 203, 95);
     border-radius: 30px;
 }
 
 .toggle-btn{
-    padding: 10px 30px;
+    padding: 10px 27px;
     cursor: pointer;
     background: transparent;
     border: none;
@@ -57,6 +58,7 @@
     width: 110px;
     height: 100%;
     background: linear-gradient(to right, rgb(238, 104, 15), rgb(243, 163, 13));
+    /* background: linear-gradient(to right, rgb(68,168,192), rgb(57 235 221)); */
     border-radius: 30px;
     transition: 0.5s;
 }
@@ -100,6 +102,7 @@
     display: block;
     margin: auto;
     background: linear-gradient(to right, rgb(238, 104, 15), rgb(243, 163, 13));
+    /* background: linear-gradient(to right, rgb(68,168,192), rgb(57 235 221)); */
     border: none;
     outline: none;
     border-radius: 30px;

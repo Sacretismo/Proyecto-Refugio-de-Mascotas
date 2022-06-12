@@ -5,7 +5,7 @@ const loggedUser = document.getElementById("logged-user1");
 const modalContent = document.getElementById("modal-body");
 
 var firebaseConfig = {
-// YOUR FIREBASE CREDENTIALS HERE 
+    // YOUR FIREBASE CREDENTIALS HERE 
     /*apiKey: "AIzaSyCj3KUX75wqOSNHQm-uEyQve1DNuI68a2Q",
     authDomain: "fb-auth-6c6d3.firebaseapp.com",
     projectId: "fb-auth-6c6d3",

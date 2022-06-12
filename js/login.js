@@ -150,7 +150,7 @@ signUpForm.addEventListener("submit", (e) => {
 /* ************************************************************* */
 /*                             LOGOUT                            */
 /* ************************************************************* */
-
+/*
 const logout = document.querySelector("#logout");
 
 logout.addEventListener("click", (e) => {
@@ -160,7 +160,7 @@ logout.addEventListener("click", (e) => {
     removeUserStorage();
   });
 });
-
+*/
 /* ************************************************************* */
 /*                            SIGN IN                            */
 /* ************************************************************* */
@@ -197,6 +197,7 @@ const googleButton = document.querySelector("#googleLogin");
 
 googleButton.addEventListener("click", (e) => {
   e.preventDefault();
+  cargando();
   //signInForm.reset();
   //$("#signinModal").modal("hide");
 
@@ -243,6 +244,7 @@ const facebookButton = document.querySelector('#facebookLogin');
 
 facebookButton.addEventListener('click', e => {
   e.preventDefault();
+  cargando();
   //signInForm.reset();
   //$("#signinModal").modal("hide");
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login-register</title>
+    <title>Autenticación</title>
     <link rel="shortcut icon" href="../images/perrologo2.png">
 
     <link rel="stylesheet" href="../css/sweetAlert2/sweetalert2.min.css">
@@ -20,8 +20,8 @@
         <div class="form-box">
             <div class="button-box">
                 <div id="btn"></div>
-                <button type="button" class="toggle-btn" onclick="Login()">Log-in</button>
-                <button type="button" class=" toggle-btn" onclick="Register()">Register</button>
+                <button type="button" class="toggle-btn" onclick="Login()">Ingresar</button>
+                <button type="button" class=" toggle-btn" onclick="Register()">Registrar</button>
             </div>
             
             
@@ -29,26 +29,26 @@
 
 
             <form id="Login" class="input-group">
-                <input id="login-email" type="text" class="input-field" placeholder="User Id" required>
-                <input id="login-password" type="password" class="input-field" placeholder="Enter Password" required>
-                <input type="checkbox" class="check-box"><span>Remember Password</span>
-                <button type="submit" class="submit-btn" id="login-form">Log in</button>
+                <input id="login-email" type="text" class="input-field" placeholder="Correo electrónico" required>
+                <input id="login-password" type="password" class="input-field" placeholder="Contraseña" required>
+                <input type="checkbox" class="check-box"><span>Recordar contraseña</span>
+                <button type="submit" class="submit-btn" id="login-form">Ingresar</button>
                 <div class="social-icons">
                     <img src="/imagenes/fbl.png" alt="" id="facebookLogin">
                     <img src="/imagenes/gl.png" alt="" id="googleLogin">
-                    <img src="/imagenes/igl.png" alt="" id="logout">
+                    <!-- <img src="/imagenes/igl.png" alt="" id="logout"> -->
                 </div>
             </form>
 
 
 
             <form id="Register" class="input-group">
-                <input id="signup-username" type="text" class="input-field" placeholder="Username" required>
-                <input id="signup-telephone" type="text" class="input-field" placeholder="Telephone" required>
-                <input id="signup-email" type="email" class="input-field" placeholder="Email-Id" required>
-                <input id="signup-password" type="password" class="input-field" placeholder="Enter Password" required>
-                <input type="checkbox" class="check-box"><span>I agree to terms & conditions</span>
-                <button type="submit" class="submit-btn" id="signup-form">Register</button>
+                <input id="signup-username" type="text" class="input-field" placeholder="Nombre de Usuario" required>
+                <input id="signup-telephone" type="text" class="input-field" placeholder="Teléfono" required>
+                <input id="signup-email" type="email" class="input-field" placeholder="Correo electrónico" required>
+                <input id="signup-password" type="password" class="input-field" placeholder="Contraseña" required>
+                <input type="checkbox" class="check-box"><span>Acepto los términos y condiciones</span>
+                <button type="submit" class="submit-btn" id="signup-form">Registrar</button>
                 
             </form>
 

@@ -1,4 +1,4 @@
-*{
+/* *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -77,7 +77,6 @@ img{
 
 
 
-/*Vista Tablets*/
 @media (min-width: 768px){
     main{
         display: grid;
@@ -89,7 +88,131 @@ img{
     }
 }
 
-/*Vista Computadoras*/
 @media (min-width: 1200px){
 
+} */
+main{
+
+}
+.contenedor-principal{
+    min-height: 78vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 11vh;
+}
+.izquierdo{
+    background-image: url(../imagenes/huellasfondo.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 60vh;
+    display: flex;
+    position: relative;
+    max-width: 400px;
+}
+.derecho{
+    padding:50px;
+  background-color: black;
+    min-height: 60vh;
+    color: white;
+}
+
+h2,h3{
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+img{
+    border-radius: 10px;
+    align-items: center;
+}
+.imagen1{
+    border: 10px solid white;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    background-image: url(../imagenes/image3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40%;
+    height: 50%;
+    transform: rotate(-6deg);
+}
+.imagen2{
+    border: 10px solid white;
+    position: absolute;
+    bottom: 15%;
+    right: 15%;
+    transform: rotate(6deg);
+    background-image: url(../imagenes/image2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40%;
+    height: 50%;
+}
+.imagen-huellas{
+    border: 10px solid white;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 21vh;
+    height: 21vh;
+    background-image: url(../imagenes/image1.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+@media (min-width: 768px){
+    .contenedor-principal{
+        display: grid;
+        grid-template-columns: 45% 55%;
+    
+    }
+    .izquierdo{
+        max-width: none;
+    }
+}
+
+@media (min-width: 1200px){
+
+}
+
+
+
+.contenedor-colaboraciones{
+    display: flex;
+    justify-content: space-around; /* Para que tengan la misma separación */
+    flex-wrap: wrap; /* Para que se ajusten a distintos tipos de pantalla */
+    margin: 0 auto; /* Para que estén centrados */
+    background-color: black;
+}
+.contenedor-colaboraciones > div{
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.3s ease-in-out; /* Para tarde 0.3s al modificarse */
+}
+/*
+.bloque1{ background-color: teal;}
+.bloque2{ background-color: chocolate;}
+.bloque3{ background-color: gray;}
+.bloque4{ background-color: lightgreen;}
+*/
+
+.tarjeta{
+    font-size: 15px;
+    background-color: aliceblue;
+}
+.tarjeta>p{
+    width: 100%;
+    text-align: center;
+    color: black;
+    margin-bottom: 10px;
+}
+.colab-titulo{
+    font-weight: bold;
+    color: #44A8C0;
 }

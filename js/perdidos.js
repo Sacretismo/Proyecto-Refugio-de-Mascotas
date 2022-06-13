@@ -3,7 +3,7 @@ import * as ServiceAlquiler from "../js/services/VolanteService.js";
 let listaVolantes;
 window.onload = () => {
     //CargarVolantes();
-    CargarAlquileres();
+    CargarVolantesInicio();
 };
 
 window.addEventListener("load", () => {
@@ -26,7 +26,7 @@ window.addEventListener("load", () => {
 
 
 
-function CargarAlquileres() {
+function CargarVolantesInicio() {
   ServiceAlquiler.default().then((x) => Cargar(x));
 }
 function Cargar(x) {

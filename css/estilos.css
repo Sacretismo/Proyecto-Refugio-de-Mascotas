@@ -182,11 +182,118 @@ main{
     background-color: rgb(0 0 0 / 50%);
 }
 
+
+
+/* ************************************************************* */
+/*                              CARDS                            */
+/* ************************************************************* */
+
+.seccion-interes{
+    display: flex;
+    justify-content: space-around; /* Para que tengan la misma separación */
+    flex-wrap: wrap; /* Para que se ajusten a distintos tipos de pantalla */
+    margin: 0 auto; /* Para que estén centrados */
+}
+.seccion-interes > div{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.seccion-informativa{
+    display: flex;
+    /* padding: 10px 90px 10px 90px; */
+    align-items: center;
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+    /* background-color: teal; */
+    background-image: url("../gifs/Ajaxloader.gif");
+    position: relative;
+}
+.seccion-informativa>p{
+    width: 100%;
+    text-align: center;
+    padding: 10px 45px 10px 45px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}
+.imagen-seccion{
+    background-color: #44A8C0;
+    position: absolute;
+    width: 65%;
+    height: 65%;
+    z-index: -2;
+    top: 35px;
+    right: 35px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parte-oscura{
+    background: rgba(0, 0, 0, 0.4);
+    width: 65%;
+    height: 65%;
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(1);
+    transition: all 0.5s ease-out;
+
+}
+/* .seccion-informativa:hover .parte-oscura{
+    background: rgba(0, 0, 0, 0.7);
+    transition: all 0.5s ease-out;
+    transform: scale(1);
+
+} */
+.seccion-informativa:hover .parte-oscura{
+    background: rgba(0, 0, 0, 0.7);
+    transition: all 0.5s ease-out;
+    transform: scale(1);
+
+}
+.seccion1{
+    background-image: url("../img/maltratoanimal.png");
+}
+.seccion2{
+    background-image: url("../img/viajar.png");
+}
+.seccion3{
+    background-image: url("../img/cuidados.png");
+}
+.seccion4{
+    background-image: url("../img/castracion.png");
+}
+.seccion5{
+    background-image: url("../img/derechoanimal.png");
+}
+
 @media (min-width: 768px){
     body> header{
         /*background-color:  rgba(233, 153, 171, 0.4);*/
         background-color:  rgba(87, 177, 199, 0.4);
         align-items: center;
 
+    }
+    .seccion-interes > div{
+        width: 400px;
+        height: 400px;
+    }
+    .seccion-informativa>p{
+        padding: 10px 90px 10px 90px;
+        font-size: 25px;
+    }
+    .imagen-seccion{
+        top: 70px;
+        right: 70px;
+    }
+    .parte-oscura{
+        top: 70px;
+        right: 70px;
     }
 }

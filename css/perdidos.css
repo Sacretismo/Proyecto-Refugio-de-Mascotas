@@ -168,7 +168,7 @@ h4{
 @media (min-width: 768px){
     main{
         display: grid;
-        grid-template-columns: 25% 75%;
+        grid-template-columns: 20% 80%;
     }
     .tipo-animal{
         display: flex;

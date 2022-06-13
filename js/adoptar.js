@@ -87,7 +87,7 @@ $(document).on('click', '.tarjeta', function () {
     $('.tel-refugio').empty();
     var contenido = $('.tel-refugio');
     var text = `
-        <label for="autor" class="info">Tel. Refugio: </label>
+        <label for="autor" class="info">Contacto: </label>
         <label>${objeto_adopcion.telefonoRefugio}</label>
     `;
     contenido.append(text);

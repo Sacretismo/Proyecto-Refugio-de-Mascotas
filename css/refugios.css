@@ -54,7 +54,7 @@ h2,.fondo a img, h1 img{
     box-shadow: .4em .4em 1em rgba(0,0,0, .2);
     border-radius: .7em;
     margin-top: 25px;
-    box-shadow: -1px -4px 25px rgb(71, 37, 157) inset, 1px 4px 3px rgb(126, 137, 182);
+    /* box-shadow: -1px -4px 25px rgb(71, 37, 157) inset, 1px 4px 3px rgb(126, 137, 182); */
 }
 
 .fondo ul{list-style:none;}
@@ -114,4 +114,9 @@ div iframe {
 }
 /*Vista Computadoras*/
 @media (min-width: 1200px){
+}
+a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
 }

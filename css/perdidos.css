@@ -144,7 +144,7 @@ aside{
     text-align: center;
     /* background: linear-gradient(to right, rgb(71 153 237), rgb(55 100 225)); */
     background: linear-gradient(45deg, #44A8C0, #3e99af);
-
+    border-radius: 5px;
 }
 
 .tipo-animal>button:hover, .ubicacion>select:hover{
@@ -184,11 +184,14 @@ h4{
 
 #resultados{
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 500;
 
-    padding-top: 5px;
+    padding-top: 6px;
     padding-bottom: 5px;
+
+    color: #44A8C0;
+    font-weight: bold;
 }
 
 
@@ -256,13 +259,10 @@ body> header.active {
 .conteiner-info{
     position: relative;
     text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
-.agregar-volante{
-    position: absolute;
-    right: 10px;
-    top: 5px;
-}
 
 article header{
     position: relative;
@@ -272,4 +272,32 @@ article header{
     position: absolute;
     right: 0;
     top: 0;
+}
+.agregar-volante{
+    position: none;
+    padding: 20px 0 20px 0;
+}
+#agregar{
+    background-color: #44A8C0;
+    color: white;
+}
+/*Vista Tablets*/
+@media (min-width: 768px){
+    .agregar-volante{
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        padding: 0;
+
+    }
+    .conteiner-info{
+        position: relative;
+        text-align: center;
+        display: block;
+    }
+}
+
+/*Vista Computadoras*/
+@media (min-width: 1200px){
+
 }

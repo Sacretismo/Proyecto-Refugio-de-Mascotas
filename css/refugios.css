@@ -10,7 +10,7 @@ body {
 main{ 
     display: flex;
     flex-direction: column;
-    padding: 11vh 10px 0 10px;
+    padding: 11vh 10px 30px 10px;
 }
 a{
     text-decoration: none;

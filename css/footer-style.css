@@ -285,3 +285,23 @@ footer section {
     font-weight: bold;
 }
 }
+.service p{
+    margin: 0;
+}
+.service div{
+    padding-bottom: 15px;
+}
+.service img{
+    padding-right: 5px;
+}
+.social-media{
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.info{
+    text-align: center;
+}
+.img-f{
+    width: 40px!important;
+}

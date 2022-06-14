@@ -399,3 +399,11 @@ body> footer {
 body{
     background-color: #d3dfd4;
 }
+#perfilModal .modal-header{
+    background-color:  #44A8C0;
+
+}
+#perfilModal .modal-header .close{
+    background-color:  #44A8C0;
+
+}

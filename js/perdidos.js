@@ -13,7 +13,7 @@ window.addEventListener("load", () => {
     if (saveUserStorage) {
         var main = $('.agregar-volante');
         var card = `
-        <button type="button" class="btn btn-primary" id="agregar">Agregar volante</button>
+        <button type="button" class="btn" id="agregar">Agregar volante</button>
         `
         main.append(card);
         document.querySelector("#agregar").addEventListener("click",()=>{

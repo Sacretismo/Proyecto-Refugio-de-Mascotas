@@ -315,3 +315,7 @@ main h2{
 .body__card_back input:hover{
     box-shadow: 1px 1px 30px 0px #449de6;
 }
+.texto{
+    font-size: 23px;
+    
+}
